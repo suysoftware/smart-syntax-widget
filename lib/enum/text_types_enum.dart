@@ -1,0 +1,1 @@
+enum TextTypesEnum { text, code }
