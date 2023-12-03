@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:smart_syntax_widget/enum/text_types_enum.dart';
+import 'package:smart_syntax_widget/model/message_element.dart';
 import 'package:smart_syntax_widget/smart_syntax_widget.dart';
 import 'package:smart_syntax_widget/theme/smart_syntax_widget_theme_collection.dart';
 
@@ -29,7 +31,8 @@ class _MainApp extends State<MainApp> {
   SmartSyntaxWidget _smartSyntaxWidget = SmartSyntaxWidget();
 
   String _text = '''
-Certainly! Flutter is a popular framework for building cross-platform mobile applications using a single codebase. It uses the Dart programming language. I'll provide you with a simple example of Flutter code and explain what each part does.
+Certainly! Flutter is a popular framework for building cross-platform mobile applications using a single codebase.
+ It uses the Dart programming language. I'll provide you with a simple example of Flutter code and explain what each part does.
 
 Here's a basic Flutter application that displays a simple "Hello World" message on the screen:
 
@@ -63,12 +66,22 @@ class MyApp extends StatelessWidget {
 This line imports the Material package from Flutter, which provides a lot of standard UI components.
 
 ```dart
-appBar: AppBar(
-  title: Text('Hello World App'),
-),
-body: Center(
-  child: Text('Hello World!'),
-),
+Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            const Icon(
+              CupertinoIcons.sparkles,
+              size: 16,
+              color: AppColors.w55,
+            ),
+            const SizedBox(
+              width: 8,
+            ),
+            const SizedBox(
+              width: 8,
+            ),
+          ],
+        ),
 ```
 ''';
 
@@ -77,6 +90,7 @@ body: Center(
     initializeTheme();
     print(_smartSyntaxWidget.slicedSpans(_text).first.standartElementValue);
   }
+
   List<Widget> mainWidgets() => [
         Expanded(
             child: SingleChildScrollView(

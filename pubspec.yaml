@@ -1,7 +1,29 @@
 name: smart_syntax_widget
-description: A new Flutter package project.
+description: This plugin allows you to highlight code syntax in your Flutter app.
 version: 0.0.1
-homepage:
+repository: https://github.com/suysoftware/smart-syntax-widget
+
+
+platforms:
+  macos:
+  windows:
+  linux:
+  web:
+  android:
+  ios:
+
+
+screenshots:
+  - description: Hotkey System Logo.
+    path: assets/ssw192.png
+
+topics:
+  - syntax
+  - highlighter
+  - code-preview
+  - syntax-highlighting
+  - code-highlighting
+
 
 environment:
   sdk: '>=3.1.3 <4.0.0'
