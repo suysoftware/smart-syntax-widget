@@ -4,7 +4,7 @@
 
 # SmartSyntaxWidget for Flutter
 
-SmartSyntaxWidget is a Flutter package designed to simplify the process of displaying mixed content types, specifically standard text and Dart code snippets, within your Flutter applications. This package offers an efficient way to parse and render text and code seamlessly, enhancing readability and user experience.
+SmartSyntaxWidget is a Flutter package designed to simplify the process of displaying mixed content types, specifically standard text and code snippets, within your Flutter applications. This package offers an efficient way to parse and render text and code seamlessly, enhancing readability and user experience.
 
 ## Features
 
